@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="1dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="1dp"
+            android:text="Confirm your password sequence"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold|normal" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog"
+            android:layout_below="@+id/header"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/login_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="15dp">
+
+                        <Button
+                            android:id="@+id/marvel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:elevation="50dp"
+                            android:gravity="center"
+                            android:enabled="false"
+                            android:text="MARVEL"
+                            android:textSize="15sp"
+                            app:shapeAppearanceOverlay="@style/Button5" />
+                        <Button
+                            android:id="@+id/DC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="50dp"
+                            android:gravity="center"
+                            android:text="DC Comics"
+                            android:textSize="15sp"
+                            app:shapeAppearanceOverlay="@style/Button5" />
+
+                    </LinearLayout>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/marvel_grid"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="visible"
+                        android:layout_marginBottom="10dp"
+                        android:columnCount="3"
+                        android:rowCount="3">
+
+                        <ImageButton
+                            android:id="@+id/btn_11"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/arc" />
+
+                        <ImageButton
+                            android:id="@+id/btn_12"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/sheild" />
+
+                        <ImageButton
+                            android:id="@+id/btn_13"
+                            android:layout_width="80dp"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/thor" />
+
+                        <ImageButton
+                            android:id="@+id/btn_21"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/avgsheild" />
+
+                        <ImageButton
+                            android:id="@+id/btn_22"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/avengers" />
+
+                        <ImageButton
+                            android:id="@+id/btn_23"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/spiderman" />
+
+                        <ImageButton
+                            android:id="@+id/btn_31"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/black" />
+
+                        <ImageButton
+                            android:id="@+id/btn_32"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/hulk" />
+
+                        <ImageButton
+                            android:id="@+id/btn_33"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/hawkeye" />
+
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dc_grid"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="gone"
+                        android:layout_marginBottom="10dp"
+                        android:columnCount="3"
+                        android:rowCount="3">
+
+                        <ImageButton
+                            android:id="@+id/bt_11"
+                            android:layout_width="100dp"
+                            android:layout_height="75dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/superman" />
+
+                        <ImageButton
+                            android:id="@+id/bt_12"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/batman" />
+
+                        <ImageButton
+                            android:id="@+id/bt_13"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/flash" />
+
+                        <ImageButton
+                            android:id="@+id/bt_21"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/wonder" />
+
+                        <ImageButton
+                            android:id="@+id/bt_22"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/dc" />
+
+                        <ImageButton
+                            android:id="@+id/bt_23"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/aqua" />
+
+                        <ImageButton
+                            android:id="@+id/bt_31"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/cyborg" />
+
+                        <ImageButton
+                            android:id="@+id/bt_32"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/green" />
+
+                        <ImageButton
+                            android:id="@+id/bt_33"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shazam" />
+
+
+                    </GridLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp">
+
+            <Button
+                android:id="@+id/ok_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:elevation="50dp"
+                android:gravity="center"
+                android:text="Proceed"
+                android:textSize="15sp"
+                app:shapeAppearanceOverlay="@style/Button5" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

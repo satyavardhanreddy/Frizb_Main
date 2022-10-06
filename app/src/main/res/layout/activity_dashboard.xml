@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="top">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loader2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/login_successful" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/meeting_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/dashboard_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="1dp"
+                    android:text="MEETING ROOM"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textStyle="bold|normal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/room_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Room Code"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:helperText="required"
+                    android:visibility="gone"
+                    app:endIconMode="clear_text"
+                    app:helperTextTextColor="@color/purple_200"
+                    app:shapeAppearanceOverlay="@style/Button5"
+                    app:startIconDrawable="@drawable/ic_baseline_meeting_room_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/room_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="30" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="#202020"
+                    android:elevation="50dp"
+                    android:enabled="true"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:text="theme"
+                    android:textSize="15sp"
+                    app:shapeAppearanceOverlay="@style/Button5"/>
+
+                <Button
+                    android:id="@+id/create_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="50dp"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:text="CREATE A MEET"
+                    android:textSize="15sp"
+                    app:shapeAppearanceOverlay="@style/Button5" />
+
+                <Button
+                    android:id="@+id/join_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="50dp"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:text="JOIN A MEET"
+                    android:textSize="15sp"
+                    app:shapeAppearanceOverlay="@style/Button5" />
+
+                <Button
+                    android:id="@+id/enter_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="50dp"
+                    android:enabled="true"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:text="ENTER"
+                    android:textSize="15sp"
+                    app:shapeAppearanceOverlay="@style/Button4" />
+
+                <Button
+                    android:id="@+id/create_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:elevation="50dp"
+                    android:enabled="true"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:text="CREATE"
+                    android:textSize="15sp"
+                    app:shapeAppearanceOverlay="@style/Button4" />
+
+                <Button
+                    android:id="@+id/share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="50dp"
+                    android:enabled="true"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:text="SHARE"
+                    android:textSize="15sp"
+                    app:shapeAppearanceOverlay="@style/Button5" />
+
+                <TextView
+                    android:id="@+id/back_text"
+                    android:textSize="15sp"
+                    android:text="Back"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="textStart"
+                    android:textStyle="italic"
+                    android:textColor="#0075FF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
