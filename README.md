@@ -31,7 +31,9 @@ DashBoard Palette
 
 
 => Jitsi sdk 6.+ is Latest version during the development of the project
+
 => Satya Vardhan Reddy k,L Arogya raj,L Vani, M Ram chandra reddy are the developers of the project.
+
 => Thanks to the Following Github Android Depedencies
 
     implementation 'de.hdodenhof:circleimageview:3.1.0'
