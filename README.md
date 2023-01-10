@@ -1,7 +1,7 @@
 # SecureMeet
 
-![image](https://user-images.githubusercontent.com/63156664/211563668-b3c73544-4024-431a-bd62-66543b916c96.png)
-  Sign Up Activity
+![image](https://user-images.githubusercontent.com/63156664/211563668-b3c73544-4024-431a-bd62-66543b916c96.png) Sign Up Activity
+  
 ![image](https://user-images.githubusercontent.com/63156664/211563808-fc47f590-2e3b-4049-8c25-ca665b9b7c73.png)
   Login activity
 ![image](https://user-images.githubusercontent.com/63156664/211563935-ec003c32-f5fa-42c9-b0c1-ee85653746d4.png)
