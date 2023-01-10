@@ -101,8 +101,8 @@
                         android:id="@+id/user_mail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress"
-                        android:maxLength="30" />
+                       android:inputType="textWebEmailAddress"
+                        />
 
                 </com.google.android.material.textfield.TextInputLayout>
 

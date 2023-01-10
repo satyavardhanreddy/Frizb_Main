@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "657139730724",
+    "project_id": "meet-74f5f",
+    "storage_bucket": "meet-74f5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657139730724:android:a712f57cc85077c0344bb1",
+        "android_client_info": {
+          "package_name": "com.example.securemeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657139730724-qb6uf5d93aardmj5ja796le0u70jv7j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSR-s_8G1AJDZKDQl09MYHbIQgPavNhQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657139730724-qb6uf5d93aardmj5ja796le0u70jv7j2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

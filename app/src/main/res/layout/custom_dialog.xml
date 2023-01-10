@@ -12,11 +12,10 @@
         android:padding="10dp"
         tools:ignore="MissingConstraints">
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/header"
+            android:id="@+id/header1"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
@@ -24,7 +23,7 @@
             android:paddingTop="1dp"
             android:paddingRight="15dp"
             android:paddingBottom="1dp"
-            android:text="Choose your password sequence"
+            android:text="Enter your password sequence"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -35,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/dialog"
-            android:layout_below="@+id/header"
+            android:layout_below="@+id/header1"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="5dp"
@@ -61,8 +60,9 @@
                     android:orientation="vertical"
                     android:padding="10dp">
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                       android:gravity="center_horizontal"
                         android:layout_centerHorizontal="true"
                         android:layout_margin="15dp">
 
@@ -92,12 +92,11 @@
                             app:shapeAppearanceOverlay="@style/Button5" />
 
                     </LinearLayout>
-
                     <GridLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/marvel_grid"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:visibility="visible"
@@ -107,6 +106,7 @@
 
                         <ImageButton
                             android:id="@+id/btn11"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_rowWeight="1"
@@ -118,6 +118,7 @@
                             android:id="@+id/btn12"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
@@ -127,6 +128,7 @@
                             android:id="@+id/btn13"
                             android:layout_width="80dp"
                             android:layout_height="100dp"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
@@ -138,6 +140,7 @@
                             android:layout_height="85dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_gravity="center"
                             android:background="@drawable/avgsheild" />
 
@@ -147,6 +150,7 @@
                             android:layout_height="100dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_gravity="center"
                             android:background="@drawable/avengers" />
 
@@ -155,6 +159,7 @@
                             android:layout_width="85dp"
                             android:layout_height="85dp"
                             android:layout_rowWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/spiderman" />
@@ -165,6 +170,7 @@
                             android:layout_height="100dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_gravity="center"
                             android:background="@drawable/black" />
 
@@ -174,6 +180,7 @@
                             android:layout_height="85dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_gravity="center"
                             android:background="@drawable/hulk" />
 
@@ -184,16 +191,16 @@
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:background="@drawable/hawkeye" />
 
 
                     </GridLayout>
-
                     <GridLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/dc_grid"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:visibility="gone"
@@ -202,88 +209,193 @@
                         android:rowCount="3">
 
                         <ImageButton
-                            android:id="@+id/bt11"
+                            android:id="@+id/btnd11"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="100dp"
-                            android:layout_height="75dp"
+                            android:layout_height="100dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/superman" />
 
                         <ImageButton
-                            android:id="@+id/bt12"
+                            android:id="@+id/btnd12"
                             android:layout_width="100dp"
-                            android:layout_height="80dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_height="100dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/batman" />
 
                         <ImageButton
-                            android:id="@+id/bt13"
-                            android:layout_width="100dp"
+                            android:id="@+id/btnd13"
+                            android:layout_width="80dp"
                             android:layout_height="100dp"
                             android:layout_rowWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/flash" />
 
                         <ImageButton
-                            android:id="@+id/bt21"
-                            android:layout_width="100dp"
-                            android:layout_height="80dp"
+                            android:id="@+id/btnd21"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
                             android:layout_rowWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/wonder" />
 
                         <ImageButton
-                            android:id="@+id/bt22"
+                            android:id="@+id/btnd22"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_rowWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/dc" />
 
                         <ImageButton
-                            android:id="@+id/bt23"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:id="@+id/btnd23"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/aqua" />
 
                         <ImageButton
-                            android:id="@+id/bt31"
+                            android:id="@+id/btnd31"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_gravity="center"
                             android:background="@drawable/cyborg" />
 
                         <ImageButton
-                            android:id="@+id/bt32"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:id="@+id/btnd32"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_gravity="center"
                             android:background="@drawable/green" />
 
                         <ImageButton
-                            android:id="@+id/bt33"
-                            android:layout_width="100dp"
-                            android:layout_height="80dp"
+                            android:id="@+id/btnd33"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
                             android:layout_rowWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/shazam" />
 
 
                     </GridLayout>
+
+<!--                    <GridLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/dc_grid"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginEnd="10dp"-->
+<!--                        android:visibility="visible"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:columnCount="3"-->
+<!--                        android:rowCount="3">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt11"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/superman" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt12"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/batman" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt13"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/flash" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt21"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/wonder" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt22"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/dc" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt23"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/aqua" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt31"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/cyborg" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt32"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/green" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt33"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/shazam" />-->
+
+
+<!--                    </GridLayout>-->
 
 
                 </LinearLayout>

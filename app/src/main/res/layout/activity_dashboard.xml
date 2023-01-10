@@ -4,28 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:gravity="top">
+    android:background="@color/white">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/loader2"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="0"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/login_successful" />
+        app:lottie_rawRes="@raw/db" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/meeting_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="250dp"
         android:layout_marginEnd="20dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="25dp"
@@ -47,9 +46,8 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/white"
-                android:gravity="center"
                 android:orientation="horizontal"
-                android:weightSum="1">
+                >
 
                 <TextView
                     android:id="@+id/dashboard_title"
@@ -76,7 +74,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp">
                 <com.google.android.material.textfield.TextInputLayout
@@ -93,7 +90,6 @@
                     app:boxCornerRadiusTopEnd="10dp"
                     app:helperText="required"
                     android:visibility="gone"
-                    app:endIconMode="clear_text"
                     app:helperTextTextColor="@color/purple_200"
                     app:shapeAppearanceOverlay="@style/Button5"
                     app:startIconDrawable="@drawable/ic_baseline_meeting_room_24">
@@ -149,7 +145,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="70dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="20dp"
                     android:elevation="50dp"
                     android:enabled="true"
                     android:gravity="center"
@@ -227,5 +223,38 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_expand_menu_button"
+       app:fab_addButtonColorNormal="#0075FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_expandDirection="up"
+        app:fab_labelsPosition="left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        app:fab_labelStyle="@style/LabelStyle">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_size="mini"
+            app:fab_title="Profile"
+            app:fab_icon="@drawable/person_24"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_canvas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_size="mini"
+            app:fab_title="Canvas"
+            app:fab_icon="@drawable/ic_baseline_brush_24"/>
+
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 </RelativeLayout>

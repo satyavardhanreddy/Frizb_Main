@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/header"
+            android:id="@+id/header2"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/dialog"
-            android:layout_below="@+id/header"
+            android:layout_below="@+id/header2"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="5dp"
@@ -97,7 +97,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/marvel_grid"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:visibility="visible"
@@ -107,27 +107,30 @@
 
                         <ImageButton
                             android:id="@+id/btn_11"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:layout_rowWeight="1"
-                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="0.3"
+                            android:layout_columnWeight="0.3"
                             android:layout_gravity="center"
                             android:background="@drawable/arc" />
 
                         <ImageButton
                             android:id="@+id/btn_12"
                             android:layout_width="100dp"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_height="100dp"
-                            android:layout_rowWeight="1"
-                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="0.3"
+                            android:layout_columnWeight="0.3"
                             android:layout_gravity="center"
                             android:background="@drawable/sheild" />
 
                         <ImageButton
                             android:id="@+id/btn_13"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="80dp"
                             android:layout_height="100dp"
-                            android:layout_rowWeight="1"
+                            android:layout_rowWeight="0.3"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/thor" />
@@ -135,6 +138,7 @@
                         <ImageButton
                             android:id="@+id/btn_21"
                             android:layout_width="85dp"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_height="85dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
@@ -143,6 +147,7 @@
 
                         <ImageButton
                             android:id="@+id/btn_22"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_rowWeight="1"
@@ -153,6 +158,7 @@
                         <ImageButton
                             android:id="@+id/btn_23"
                             android:layout_width="85dp"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_height="85dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
@@ -162,6 +168,7 @@
                         <ImageButton
                             android:id="@+id/btn_31"
                             android:layout_width="100dp"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_height="100dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
@@ -171,6 +178,7 @@
                         <ImageButton
                             android:id="@+id/btn_32"
                             android:layout_width="85dp"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_height="85dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
@@ -180,6 +188,7 @@
                         <ImageButton
                             android:id="@+id/btn_33"
                             android:layout_width="85dp"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_height="85dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
@@ -188,12 +197,11 @@
 
 
                     </GridLayout>
-
                     <GridLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/dc_grid"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
                         android:visibility="gone"
@@ -204,36 +212,40 @@
                         <ImageButton
                             android:id="@+id/bt_11"
                             android:layout_width="100dp"
-                            android:layout_height="75dp"
-                            android:layout_rowWeight="1"
-                            android:layout_columnWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="0.3"
+                            android:layout_columnWeight="0.3"
                             android:layout_gravity="center"
                             android:background="@drawable/superman" />
 
                         <ImageButton
                             android:id="@+id/bt_12"
                             android:layout_width="100dp"
-                            android:layout_height="80dp"
-                            android:layout_rowWeight="1"
-                            android:layout_columnWeight="1"
+                            android:layout_height="100dp"
+                            android:layout_rowWeight="0.3"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_columnWeight="0.3"
                             android:layout_gravity="center"
                             android:background="@drawable/batman" />
 
                         <ImageButton
                             android:id="@+id/bt_13"
-                            android:layout_width="100dp"
+                            android:layout_width="80dp"
                             android:layout_height="100dp"
-                            android:layout_rowWeight="1"
+                            android:layout_rowWeight="0.3"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/flash" />
 
                         <ImageButton
                             android:id="@+id/bt_21"
-                            android:layout_width="100dp"
-                            android:layout_height="80dp"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_gravity="center"
                             android:background="@drawable/wonder" />
 
@@ -244,13 +256,15 @@
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:background="@drawable/dc" />
 
                         <ImageButton
                             android:id="@+id/bt_23"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
                             android:layout_rowWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
                             android:background="@drawable/aqua" />
@@ -261,13 +275,15 @@
                             android:layout_height="100dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_gravity="center"
                             android:background="@drawable/cyborg" />
 
                         <ImageButton
                             android:id="@+id/bt_32"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:foreground="?android:attr/selectableItemBackground"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
@@ -275,8 +291,9 @@
 
                         <ImageButton
                             android:id="@+id/bt_33"
-                            android:layout_width="100dp"
-                            android:layout_height="80dp"
+                            android:layout_width="85dp"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:layout_height="85dp"
                             android:layout_rowWeight="1"
                             android:layout_columnWeight="1"
                             android:layout_gravity="center"
@@ -284,6 +301,102 @@
 
 
                     </GridLayout>
+
+<!--                    <GridLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/dc_grid"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginEnd="10dp"-->
+<!--                        android:visibility="visible"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:columnCount="3"-->
+<!--                        android:rowCount="3">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt_11"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="75dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/superman" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt_12"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/batman" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt_13"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/flash" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt_21"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/wonder" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt_22"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/dc" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt_23"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/aqua" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt_31"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/cyborg" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt_32"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/green" />-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/bt_33"-->
+<!--                            android:layout_width="100dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_rowWeight="1"-->
+<!--                            android:layout_columnWeight="1"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/shazam" />-->
+
+
+<!--                    </GridLayout>-->
 
 
                 </LinearLayout>
