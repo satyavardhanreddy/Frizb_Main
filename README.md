@@ -14,17 +14,18 @@ Join Meet Palette
   
 ![image](https://user-images.githubusercontent.com/63156664/211563975-50e988d3-56e3-4c79-a9e0-3b2cc3fa163c.png)
 
-
+Graphical Password Activity
 
 ![image](https://user-images.githubusercontent.com/63156664/211564040-d66efe60-a27d-4a42-979d-273910ccd9d1.png)
 
+Create Meet palette
 
 ![image](https://user-images.githubusercontent.com/63156664/211564085-9fb790bf-f323-4f3d-8ce1-7f850adc0bf8.png)
 
 DashBoard Palette
 
 
-
+******************************************************************************************************************
 
 
 
